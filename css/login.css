@@ -1,0 +1,39 @@
+.bg-cover {
+    background-image: url("../images/michaelsoft.jpg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
+
+.center-me {
+    display: flex;
+    justify-content: center;
+    padding: 200px;
+}
+
+.form-signin {
+    border-radius: 50px;
+    background-color: #d5d5d5;
+    padding: 20px;
+    text-align: center;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+img {
+    width: 100%;
+    height: 450px;
+    margin: auto;
+}
+
+.carousel-indicators li {
+    background-color: grey;
+}
+
+.carousel-indicators .active {
+    background-color: rgb(32, 32, 32)
+}

@@ -7,10 +7,10 @@ if(isset($_POST['signup-submit'])){
     $email = $_POST['email'];
     $fname = $_POST['fname'];
     $lname = $_POST['lname'];
-    $pssw_rep = $_POST['con-pwd'];
-    $pwd = $_POST['pwd'];
+    $passw_rep = $_POST['con-pwd'];
+    $passw = $_POST['pwd'];
 
-    if($pssw !== $passw_rep){
+    if($passw !== $passw_rep){
         header("Location: ../signup.php?error=diffPasswords");
         exit();
     }
@@ -32,13 +32,12 @@ if(isset($_POST['signup-submit'])){
                 header("Location: ../signup.php?error=UsernameTaken");
                 exit();
             }
-            
             else{
-                $sql = "INSERT users (lname, fname, email, uname, password) VALUES (?, ? ,? ,?, ?)";
+                $sql = "INSERT INTO users (lname, fname, email, uname, password) VALUES (?, ? ,? ,?, ?)";
                 $stmt = mysqli_stmt_init($conn);
                 if(!mysqli_stmt_prepare($stmt, $sql)){
-                 header("Location: ../signup.php?error=SQLInjection");
-                exit();
+                    header("Location: ../signup.php?error=SQLInjection");
+                    exit();
                  }
                  else{
                      $hashed = password_hash($passw, PASSWORD_BCRYPT);
