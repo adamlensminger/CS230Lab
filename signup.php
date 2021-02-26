@@ -28,7 +28,7 @@ require "includes/header.php"
 
                         <input type="password" id="inputPassword" class="form-control" name="pwd" placeholder="Password" required>
 
-                        <input type="password" id="inputPassword" class="form-control" name="con-pwd" placeholder=" COnfirm Password"
+                        <input type="password" id="inputPassword" class="form-control" name="con-pwd" placeholder=" Confirm Password"
                             required>
                         
                         <button class="btn btn-lg btn-danger btn-block" name="signup-submit" type="submit">Sign up</button>

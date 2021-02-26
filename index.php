@@ -1,3 +1,7 @@
+<?php
+require 'includes/header.php';
+
+?>
 <body>
     <link rel="stylesheet" href="css/about.css">
 
@@ -11,7 +15,7 @@
                 <img src="images/mom.jpg">
                 <div class="container">
                     <h2>CEO</h2>
-                    <p style="color: green">Emotionally Unavaliably Mom</p>
+                    <p style="color: green">Emotionally Unavaliable Mom</p>
                     <p>Too dedicated to the job to play with her kids. Her personal life is a wreck but she is passionate about her work.</p>
                 </div>
             </div>
