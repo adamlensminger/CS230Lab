@@ -34,7 +34,7 @@ CREATE TABLE `gallery` (
   `title` varchar(60) NOT NULL,
   `descript` text NOT NULL,
   `picPath` varchar(80) NOT NULL,
-  `upload_data` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `upload_data` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `rating` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf16 COMMENT='picture gallery database';
 
